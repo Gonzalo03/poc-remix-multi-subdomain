@@ -37,7 +37,7 @@ export default function ElSembrador() {
         </div>
 
         <p style={{ marginTop: "1.5rem", color: "#888", fontSize: "0.85rem" }}>
-          elsembrador.tamperu.com
+          elsembrador.tamiperu.com
         </p>
       </div>
     </main>

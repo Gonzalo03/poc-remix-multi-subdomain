@@ -15,8 +15,8 @@ export default function NotFound({ subdomain }: { subdomain: string | null }) {
         <h1 style={{ color: "#374151", marginTop: 0 }}>Iglesia no encontrada</h1>
         <p style={{ color: "#6b7280" }}>
           {subdomain
-            ? `No hay ninguna iglesia configurada para "${subdomain}.tamperu.com".`
-            : "Accedé a través de un subdominio válido: elsembrador.tamperu.com o bethesda.tamperu.com"}
+            ? `No hay ninguna iglesia configurada para "${subdomain}.tamiperu.com".`
+            : "Accedé a través de un subdominio válido: elsembrador.tamiperu.com o bethesda.tamiperu.com"}
         </p>
       </div>
     </main>

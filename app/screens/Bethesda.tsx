@@ -37,7 +37,7 @@ export default function Bethesda() {
         </div>
 
         <p style={{ marginTop: "1.5rem", color: "#888", fontSize: "0.85rem" }}>
-          bethesda.tamperu.com
+          bethesda.tamiperu.com
         </p>
       </div>
     </main>
