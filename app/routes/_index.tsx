@@ -1,11 +1,11 @@
 import type { Route } from "./+types/_index";
 import { getSubdomain } from "~/lib/subdomain";
-import TenantA from "~/screens/TenantA";
-import TenantB from "~/screens/TenantB";
+import ElSembrador from "~/screens/ElSembrador";
+import Bethesda from "~/screens/Bethesda";
 import NotFound from "~/screens/NotFound";
 
 export function meta(_: Route.MetaArgs) {
-  return [{ title: "Multi-tenant app" }];
+  return [{ title: "Tamperu — Iglesias" }];
 }
 
 export async function loader({ request }: Route.LoaderArgs) {
@@ -16,7 +16,7 @@ export async function loader({ request }: Route.LoaderArgs) {
 export default function Index({ loaderData }: Route.ComponentProps) {
   const { subdomain } = loaderData;
 
-  if (subdomain === "tenant-a") return <TenantA />;
-  if (subdomain === "tenant-b") return <TenantB />;
+  if (subdomain === "elsembrador") return <ElSembrador />;
+  if (subdomain === "bethesda") return <Bethesda />;
   return <NotFound subdomain={subdomain} />;
 }

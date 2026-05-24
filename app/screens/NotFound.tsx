@@ -1,21 +1,22 @@
 export default function NotFound({ subdomain }: { subdomain: string | null }) {
   return (
-    <main style={{ fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+    <main style={{ fontFamily: "system-ui, sans-serif", padding: "2rem", background: "#fafafa", minHeight: "100vh" }}>
       <div
         style={{
-          maxWidth: 600,
+          maxWidth: 640,
           margin: "0 auto",
-          background: "#fef2f2",
-          border: "2px solid #ef4444",
-          borderRadius: 12,
-          padding: "2rem",
+          background: "#fff",
+          border: "2px solid #e5e7eb",
+          borderRadius: 16,
+          padding: "2.5rem",
+          boxShadow: "0 4px 24px rgba(0,0,0,0.05)",
         }}
       >
-        <h1 style={{ color: "#b91c1c", marginTop: 0 }}>Unknown tenant</h1>
-        <p style={{ color: "#374151" }}>
+        <h1 style={{ color: "#374151", marginTop: 0 }}>Iglesia no encontrada</h1>
+        <p style={{ color: "#6b7280" }}>
           {subdomain
-            ? `No tenant configured for subdomain "${subdomain}".`
-            : "No subdomain detected. Access this app via a subdomain (e.g. tenant-a.myapp.com)."}
+            ? `No hay ninguna iglesia configurada para "${subdomain}.tamperu.com".`
+            : "Accedé a través de un subdominio válido: elsembrador.tamperu.com o bethesda.tamperu.com"}
         </p>
       </div>
     </main>
